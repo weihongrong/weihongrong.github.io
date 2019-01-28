@@ -25,20 +25,38 @@
 			background-color: #ffcef8;
 		}
 	}
+
+	@keyframes rainbow3{
+		33%{
+			background-color: #cefff4;
+		}
+		53%{
+			background-color: #cfffce;
+		}
+		83%{
+			background-color: #ffcef8;
+		}
+	}
 	body{
 		padding: 3rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		animation: 2.5s rainbow ease infinite;
+		animation: 3.5s rainbow ease infinite;
+	}
+
+	.numero{
+		font-size: 5rem;
+		animation: 3.5s rainbow3 ease infinite;
+
 	}
 
 
 	h1 {
 		font-size: 2rem;
 		font-family: 'Major Mono Display', Helvetica, Sans-serif;
-		animation: 2.5s rainbow2 ease infinite;
+		animation: 3.5s rainbow2 ease infinite;
 	}
 </style>
 </head>
