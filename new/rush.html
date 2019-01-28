@@ -1,6 +1,7 @@
 <html>
 <head>
 <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
 <style>
 	@keyframes rainbow{
 		33%{
@@ -28,13 +29,13 @@
 
 	@keyframes rainbow3{
 		33%{
-			background-color: #cefff4;
+			color: #cefff4;
 		}
 		53%{
-			background-color: #cfffce;
+			color: #cfffce;
 		}
 		83%{
-			background-color: #ffcef8;
+			color: #ffcef8;
 		}
 	}
 	body{
@@ -43,6 +44,7 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+		font-family: 'IBM Plex Sans', Arial, Sans-serif;
 		animation: 3.5s rainbow ease infinite;
 	}
 
@@ -54,6 +56,7 @@
 
 
 	h1 {
+		max-width: 330px;
 		font-size: 2rem;
 		font-family: 'Major Mono Display', Helvetica, Sans-serif;
 		animation: 3.5s rainbow2 ease infinite;
