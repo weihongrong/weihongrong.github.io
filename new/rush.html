@@ -2,6 +2,17 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
 <style>
+	@keyframes rainbow{
+		33%{
+			background-color: #ffcef8;
+		}
+		53%{
+			background-color: #cefff4;
+		}
+		83%{
+			background-color: #cfffce;
+		}
+	}
 	body{
 		padding: 3rem;
 		display: flex;
@@ -13,14 +24,15 @@
 
 
 	h1 {
-		font-size: 3rem;
+		font-size: 2rem;
 		font-family: 'Major Mono Display', Helvetica, Sans-serif;
+		animation: 1s rainbow ease infinite;
 	}
 </style>
 </head>
 <body>
-<h1># of Asian Girls that broke into the core 4 - <span>2019</span></h1>
-<div>1.5?</div>
+<h1># of asian girls that broke the core 4 ceiling - <span>2019</span></h1>
+<div class='numero'>1.5?</div>
 <div>think we missed you? <a href='#'>let us know</a></div>.
 </body>
 </html>
