@@ -29,13 +29,13 @@
 
 	@keyframes rainbow3{
 		33%{
-			color: #cefff4;
+			text-shadow: 3px 5px #cefff4;
 		}
 		53%{
-			color: #cfffce;
+			text-shadow: 3px 5px #cfffce;
 		}
 		83%{
-			color: #ffcef8;
+			text-shadow: 3px 5px #ffcef8;
 		}
 	}
 
@@ -58,8 +58,13 @@
 		font-weight: 700;
 		width: 330px;
 		text-align: left;
-		font-size: 5rem;
 		animation: drop 0.5s ease;
+		
+	}
+
+	.num{
+		font-size: 5rem;
+		animation: 5s rainbow ease infinite;
 	}
 
 	.luk{
@@ -79,7 +84,7 @@
 </head>
 <body>
 <h1># of asian girls who broke the core 4 ceiling - <span>2019</span></h1>
-<div class='numero'>1.5</div>
+<div class='numero'><span class='num'>1.5</span></div>
 <div class='luk'>think we missed you? <a href='https://www.cornellphc.com/'>let us know</a></div>.
 </body>
 </html>
