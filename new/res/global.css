@@ -3,7 +3,8 @@
 	--dred:#7F2D15;
 	--redb:#c11e1e;
 	--dredb:#40170b;
-	--lred:#E55226;
+	--lred:#E55226;	
+	font-size: 14px;
 }
 
 .animate{
@@ -48,15 +49,13 @@
 }
 
 @keyframes space-in{
-	0% {margin: 0;
-}
-	30% {margin: 0;
-}
+	0% {margin: 0;}
+	30% {margin: 0;}
 }
 
 @keyframes show{
-		0% {opacity: 0;}
-	}
+	0% {opacity: 0;}
+}
 
 .slide-d{
  animation-name: slide-down;
@@ -70,9 +69,6 @@ animation-name: slide-up;
 	animation-name: show;
 }
 
-:root{
-	font-size: 14px;}
-
 button:focus, input:focus {
 	outline: none;
 }
@@ -83,7 +79,6 @@ body{
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 300;
 	color: #696969;}
-
 
 a {
 	color: inherit;
@@ -170,7 +165,7 @@ nav img{
 	transition: 0.1s ease;
 }
 
-section {
+main {
 	display: flex;
 	flex-flow: row;
 	background-color: lightgrey;
