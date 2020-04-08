@@ -7,6 +7,8 @@
 	font-size: 14px;
 }
 
+/*ANIMATIONS*/
+
 .animate{
 	visibility: hidden;
 	animation-name: none !important;
@@ -69,6 +71,8 @@ animation-name: slide-up;
 	animation-name: show;
 }
 
+/*END ANIMATIONS*/
+
 button:focus, input:focus {
 	outline: none;
 }
@@ -90,7 +94,7 @@ a:hover {
 
 ul {list-style: none;}
 
-.logo {
+logo {
 	line-height: 1;
 	font-weight: 700;
 	color: var(--red);
@@ -99,6 +103,8 @@ ul {list-style: none;}
 
 body {
 	background-color: #eee;
+	max-width: 1200px;
+	margin: auto;
 	display: grid;
 	height: 100vh;
 	min-height: 100vh;
@@ -169,7 +175,6 @@ main {
 	display: flex;
 	flex-flow: row;
 	background-color: lightgrey;
-	box-shadow: -1px 1px 0px 1px rgba(145,135,145,0.47);
 	z-index: 5;
 	animation: box-shadow 0.1s;
 	animation-delay: 0.3s;

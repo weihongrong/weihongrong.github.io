@@ -1,0 +1,182 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+		<script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+		<style>
+			:root{
+				font-size: 14px;
+				--lan: #1847f5;
+				--zi: #cc66cc;
+				--lv: #00feb8;
+				--fen: #fae3eb;
+				--bohe: #ccffcc;
+			}
+
+			body{
+				font-size: 1rem;
+				background-color: var(--fen);
+				font-family: IBM Plex Sans;
+			}
+
+			main{
+				max-width: 999px;
+				width: 100%;
+				margin: auto;
+			}
+
+			.tile-box{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			tile{
+				width: 40%;
+				margin: 1.5rem;
+				padding-top: 40%;
+				display: flex; 
+				justify-content: center;
+				align-items: center;
+				position: relative;
+			}
+
+			tile article{
+				padding: 2rem;
+				width: calc(100% - 2rem);
+				position: absolute;
+				top: 1rem;
+				background: linear-gradient(-37deg, var(--zi), rgba(204,255,204,0.75));
+				width: 75%;
+				margin-left: -3rem;
+				font-weight: 900;
+				z-index: 6;
+				border-radius: 20rem;
+				transform: rotate(-12deg);
+			}
+
+			tile.title{
+				color: transparent;
+				border: 2px solid var(--zi);
+				border-radius: 50%;
+				font-size: 5rem;
+				z-index: 15;
+				letter-spacing: -0.25em;
+				font-stretch: 90%;
+				z-index: 6;
+
+			}
+			tile.title div{
+				transform: skew(-27deg) scaleY(1.4);
+				text-shadow: 1px 1px var(--lan);
+			}
+
+			header{
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				background-color:  rgba(204,255,204,0.75);
+				padding: 0.25rem 1rem;
+				position: sticky;
+				color: var(--lan);
+				top: 0.25rem;
+				z-index: 5
+			}
+
+			header right{
+				display: flex;
+			}
+
+			header right>div{
+				margin-left: 1rem;
+			}
+
+			tile:not(.title){
+				background-color: rgba(255,255,255,0.75);
+			}
+
+			tile text{
+				width: 100%;
+			    position: absolute;
+			    padding: 1rem;
+			    bottom: 0;
+			    box-sizing: border-box;
+			    max-height: 100%;
+			    overflow: scroll;
+			    transform: skew(0.5deg);
+			}
+
+			tile text h3{
+				margin: 0;
+				margin-bottom: 1rem;
+				font-weight: 600;
+				font-size: 2rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<main>
+			<header>
+				<left>
+					SHUANG CHENG JI
+				</left>
+
+				<right>
+					<div>关于</div>
+					<div>联系</div>
+				</right>
+			</header>
+
+			<section class='tile-box'>
+				<tile class='title'>
+					<article>
+						<div>又又</div>
+						<div>土成</div>
+						<div>言己</div>
+					</article>
+				</tile>
+				<tile>
+					<cover>
+					</cover>
+					<text>
+						<h3>Title</h3>
+						<div>
+							<p>write something here</p>
+						    <p>Second paragraph</p>
+						    <p>Ending</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before &amp; After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”</p>
+							<p>McClintock's eye for detail certainly helped narrow the whereabouts of lorem ipsum's origin, however, the “how and when” still remain something of a mystery, with competing theories and timelines.</p>
+						</div>
+					</text>
+				</tile>
+				<tile>
+					<cover>
+					</cover>
+				</tile>
+				<tile>
+					<cover>
+					</cover>
+				</tile>
+				<tile>
+					<cover>
+					</cover>
+				</tile>
+				<tile>
+					<cover>
+					</cover>
+				</tile>
+
+			</section>
+		</main>
+	</body>
+
+	<script type="text/javascript">
+		$(window).on('resize', function(){
+		      var win = $(this); //this = window
+		      if (win.height() >= 820) { /* ... */ }
+		      if (win.width() >= 1280) { /* ... */ }
+		});
+	</script>
+</html>

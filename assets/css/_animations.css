@@ -1,0 +1,63 @@
+/*ANIMATIONS*/
+
+.animate{
+	visibility: hidden;
+	animation-name: none !important;
+}
+
+.animated{
+	animation-duration: 0.3s;
+	animation-fill-mode: none;
+}
+
+
+@keyframes slide-down{
+	0% {transform: translateY(-3rem);
+		opacity: 0.5}
+	}
+
+@keyframes slide-up-origin{
+	0% {transform: translateY(3rem);
+		opacity: 0}
+	}
+
+@keyframes box-shadow{
+	0% {box-shadow: none;}
+}
+
+@keyframes slide-down-origin{
+	0% {transform: translateY(-3rem);
+		opacity: 0}
+	}
+
+@keyframes slide-up{
+	0% {transform: translateY(3rem);
+		opacity: 0.5}
+	}
+@keyframes red-in{
+	0% {background-color: var(--red);
+		color:var(--red);}
+	30% {background-color: var(--red);
+		color:var(--red);}
+}
+
+@keyframes space-in{
+	0% {margin: 0;}
+	30% {margin: 0;}
+}
+
+@keyframes show{
+	0% {opacity: 0;}
+}
+
+.slide-d{
+ animation-name: slide-down;
+}
+
+.slide-u{
+animation-name: slide-up;
+}
+
+.show{
+	animation-name: show;
+}
