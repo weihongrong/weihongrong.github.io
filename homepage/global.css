@@ -137,10 +137,7 @@ header{
   position: relative;
   padding-top: 30vh;
   padding-bottom: 5rem;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-y: 0;
-  background-size: cover;
+  padding-left: 2rem; padding-right: 2rem;
   }
 
 footer{
@@ -938,21 +935,12 @@ nav{
   -webkit-backface-visibility: hidden;
   }
 
-  nav.lander .nav-buttons{
-      margin-top: 0.5rem;
-      align-self: center;
-  }
-
-  nav.scroll .phone.alt{
-      color: var(--d-gray) !important;
-  }
-
   .nav-left{
       display: flex;
       align-items: flex-end;
   }
 
-  .nav-left>a, .nav-left .hover-menu{
+  .nav-left .navitem{
       text-transform: uppercase;
       font-family: var(--head);
       letter-spacing: -0.0125em;
@@ -962,20 +950,12 @@ nav{
       transition: font-size var(--ease);
       }
 
-  .nav-left>a>div{
-      text-shadow: none;}
-
-  nav.scroll .nav-left a, nav.scroll .nav-left>.hover-menu{
-      text-shadow: none;}
-
   .logo-holder {
       padding: 0 !important; margin:0 !important;}
   .logo-holder img{transition: opacity var(--ease);}
-  .logo-holder:hover {opacity: 0.75;}
+  .logo-holder:hover img{opacity: 0.75;}
 
   nav a:hover {text-decoration: none;}
-  .nav-buttons a:hover{text-decoration: none;}
-  .nav-buttons .mobile-menu-button {display: none;}
 
   .nav-left .logo-full{
       height: 2.3rem;
@@ -983,9 +963,7 @@ nav{
       padding-right: 1rem;
   }
   .nav-left .logo-mobile{
-      height: 3.1rem;
-      padding: 0 1.5rem;
-      padding-right: 1rem;
+      height: 4rem;
       display: none;
   }
   .nav-left .ie{
@@ -997,29 +975,11 @@ nav{
   _:-ms-lang(x), .nav-left .non-ie{
       display: none !important;
   }
-  _:-ms-lang(x), nav #logogray{
-      display: none !important;
-  }
-  _:-ms-lang(x), nav.scroll #logowhite{
-      display: none !important;
-  }
-  _:-ms-lang(x), nav.scroll #logogray.ie{
-      display: block !important;
-  }
   _:-ms-lang(x), .nav-left .logo-mobile{
       display: none !important;
   }
-  .contact{
-      font-weight: 500;
-      color: var(--l-gray);
-      font-size: 0.95rem;
-      position: absolute;
-      right: 0; top: 0;
-      padding-top: 0.75rem;
-      padding-right: 0.5rem;
-      transition: 0.1s ease;}
 
-  .contact a, .bottombar a{
+  .bottombar a{
       padding: 0 0.75rem;}
       
   .scroll>.contact{
@@ -1030,7 +990,6 @@ nav{
     color: white !important;
     font-size: 0.9rem;
     letter-spacing: 1px;
-    border-radius: 3rem;
     }
 
   nav .popup {
@@ -1044,6 +1003,8 @@ nav{
     margin-right: 1rem;
     align-items: flex-end;
     }
+
+    .nav-buttons .mobile-menu-button {display: none;}
 
     .nav-buttons button{
       margin-left: 0.5rem;
@@ -1078,8 +1039,6 @@ nav{
     display: none;
     align-items: flex-start;
     }
-
-  .panel-item {}
 
   i.zmdi.zmdi-chevron-right {display: inline;font-size: inherit;margin-left: 0.5rem;}
     
@@ -1195,32 +1154,25 @@ a.phone-alt .material-icons{color: white;}
 }
 
 /* media queries */
-@media screen and (max-width: 1050px), screen and (max-device-width: 1050px) {
+@media screen and (max-width: 1200px), screen and (max-device-width: 1200px) {
+  .nav-left .navitem{font-size: 1.1rem}
+}
 
-    section.feature article{
-        width: 80%;
-    }
 
-    /*header styling*/
-    .nav-left .logo-full{
-        display: none;
-    }
-    .nav-left .logo-mobile.non-ie{
-        display: inline-block;
-    }
-    _:-ms-lang(x), .nav-left .logo-mobile.non-ie, .nav-left .logo-full.ie{
-        display: none;
-    }
-    _:-ms-lang(x), .nav-left .logo-mobile.ie{
-        display: inline-block;
-    }
 
-    .phone {display: none;}
-    .phone-alt {display: inline-block;}
+@media screen and (max-width: 1080px), screen and (max-device-width: 1080px) {
+    .nav-buttons .mobile-menu-button{
+      display: block;
+      font-size: 2rem;
+      width: 2rem;
+      height: 2rem;
+      margin-left: 1rem;
+      text-align: center;
+      }
 
-    .nav-left .navitem{font-size: 1rem}
-
-    .contact{font-size: 0.9rem;}
+    .nav-left .navitem{
+      display: none;
+    }
 
     footer .container{flex-wrap: wrap;}
 
@@ -1244,20 +1196,8 @@ a.phone-alt .material-icons{color: white;}
     }
 }
 
-@media screen and (max-device-width: 1050px) {
-    header{background-attachment: scroll !important;}
-}
-
 /* tablet/windowed/laptop styling */
 @media screen and (max-width: 850px), screen and (max-device-width: 850px) {
-
-    .top-banner{display: none;}
-
-    nav.banner{transform: none;}
-
-    section{padding: 3rem 1rem;}
-
-    section.quote{padding: 3rem;}
 
     .popup.viewer{
     width: 95vw;
@@ -1292,12 +1232,46 @@ a.phone-alt .material-icons{color: white;}
 
     /*header styling*/
     #btt {margin: 1.25rem;}
-
 }
 
 /*mobile layouts */
 @media screen and (max-width: 670px), screen and (max-device-width: 670px) {
 
+    nav .mobile-phone-button{
+      display: block;
+      width: 2rem; height: 2rem;
+      text-align: center;
+      font-size: 2rem;
+      margin-left: 1rem;
+      position: absolute;
+      left: 0;
+    }
+    .nav-left .logo-full{
+      display: none;
+    }
+    .nav-left .logo-mobile{
+      display: block;
+    }
+    .nav-buttons button.alt{
+      display: none;
+    }
+
+    nav{
+      padding: 0.5rem 0;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-buttons{
+      align-items: center;
+      position: absolute;
+      right: 0;
+    }
+
+    .nav-buttons button{
+      font-size: 1rem;
+      margin: 0;
+    }
 
     footer .newsletter{
         position: absolute;
@@ -1305,7 +1279,7 @@ a.phone-alt .material-icons{color: white;}
     .popup.viewer .scroller{
     padding: 1rem 0.5rem;}
 
-    header{padding-top: 7.5rem;}
+    header{padding-top: 20vh;}
 
     header>.textwrapper>.subtitle{
         padding-top: 0;}
@@ -1363,155 +1337,6 @@ a.phone-alt .material-icons{color: white;}
 
     .bottombar {width: 22rem; left: calc(50% - 11rem); padding-bottom: 1rem; }
     .bottombar a {padding: 0 0.25rem;}
-
-    /*header styling*/
-    .contact, .nav-left .navitem{
-        display: none;}
-
-    .logo-mobile{
-        padding: 0 !important;
-        margin: 0 1rem;}
-
-    nav{justify-content: center;
-        align-items: center;
-        padding: 0;}
-        nav.scroll {padding: 0;}
-
-    #login {margin: 0.5rem;}
-
-    #mobile {
-        display: none;
-        font-size: 1.25rem;
-        right: 0; top: 0; padding: 0; width: 67vw;
-        position: absolute; flex-flow: row wrap;
-        align-items: center;
-        margin: auto 0.25rem;
-        margin-top: 4rem;
-        overflow-x: hidden;
-        overflow-y: auto;
-        animation-name: slide-down-s;
-        animation-timing-function: ease;}
-        nav.scroll #mobile {
-            margin-top: 3.5rem;}
-
-        .mobile-menu-button.open #mobile{
-            display: block;
-            animation-duration: 0.2s
-        }
-
-        .mobile-menu-button.open .material-icons{
-            transform: rotatex(-45deg);
-            transition: transform var(--ease);
-        }
-
-    #mobile .main-links{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    #mobile .pagelink {
-        display: flex;
-        font-family: var(--head);
-        font-weight: 500;
-        letter-spacing: 0.1px;
-        width: 50%;
-        box-sizing: border-box;
-        height: 7.5rem;
-        align-items: center; justify-content: center;
-        border-bottom: 1px solid var(--gray3);
-        transition: var(--ease);}
-
-        #mobile .pagelink:nth-of-type(2n-1) {
-             border-right: 1px solid var(--gray3);
-         }
-
-        #mobile .pagelink:hover{
-            background-color: var(--l-blue);
-            cursor: pointer;
-            color: white;}
-
-    #mobile .links{
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid var(--l-gray);
-        backdrop-filter: blur(2px);
-        padding: 0.25rem 0;
-    }
-            #mobile .links:last-of-type{
-                border: none;
-            }
-
-    #mobile .links a{
-        font-size: 0.9rem;
-        font-weight: 500;
-        text-align: center;
-        width: 100%;
-        padding: 0.75rem;
-        display: block;
-    }
-         #mobile .links a:hover{
-            text-decoration: underline;
-        }
-
-    #mobile .close{
-        flex-shrink: 0;
-        margin: 0 0.5rem;
-    }
-
-
-
-    #mobile .material-icons{vertical-align: sub;}
-    #mobile .phone-mobile{color:var(--l-blue);}
-      
-    .nav-buttons {
-        display: flex;
-        right: 0;
-        position: absolute;
-    }
-
-    .nav-buttons button{
-        padding: 0.75rem 0.5rem !important;
-        margin: auto 0.5rem !important;
-        width: 5rem;}
-
-    .nav-buttons .mobile-menu-button {
-        vertical-align: initial;
-        align-items: center;
-        display: flex;
-        font-size: 2rem;
-        margin-left: 0.5rem;
-        margin-right: 0.75rem;
-        cursor: pointer;}
-
-    .mobile-phone-button {display: block; left: 0; position: absolute;}
-    .mobile-phone-button a:hover{
-        text-decoration: none !important;}
-    .mobile-phone-button button{
-        font-size: 1.5rem !important;
-        margin: auto 0.5rem !important;
-        padding: 0.35rem !important;
-        width: 3rem;}
-     .mobile-phone-button i{margin: auto}
-
-     #ad {
-        visibility: hidden;
-     }
-
-     #btt {
-        display: none;}
-
-    _:-ms-lang(x), .nav-buttons {
-        top: 1.25rem;}
-
-    _:-ms-lang(x), .mobile-phone-button {
-        top: 1.25rem;}
-
-    _:-ms-lang(x), nav.scroll .nav-buttons{
-        top: 0.5rem;
-    }
-
-    _:-ms-lang(x), nav.scroll .mobile-phone-button{
-        top: 0.5rem;
-    }
 
     section.feature article{
         min-width: 300px;

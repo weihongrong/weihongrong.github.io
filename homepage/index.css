@@ -88,3 +88,29 @@ section.offerings article:first-of-type{
 	align-items: flex-end; justify-content: center;
 	margin-bottom: -5rem;
 }
+
+
+@media screen and (max-width: 850px), screen and (max-device-width: 850px) {
+	section.offerings{
+		flex-direction: column;
+	}
+
+
+	section.offerings article:first-of-type{
+		margin-right: 0;
+		margin-bottom: 1.5rem;
+	}
+
+	.container.logo .logo-img {
+    padding: 0.75rem;
+    height: 2rem;}
+
+    .container.logo .logo-img.shrink{
+      height: 1.5rem;
+    }
+
+    .container.logo .logo-img.zoom{
+      height: 2.75rem;
+    }
+
+}
