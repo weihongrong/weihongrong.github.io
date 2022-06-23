@@ -1,0 +1,90 @@
+.title-alt{
+	font-size: 3rem;
+	font-family: var(--body);
+	letter-spacing: -0.05em;
+	font-weight: 500;
+	color: var(--gray2);
+	line-height: 1;
+	margin-bottom: 1.5rem;
+}
+
+.title-alt.sub{
+	font-size: 2rem;
+	margin: 1rem auto;
+}
+
+
+section.offerings{
+	display: flex;
+	text-align: left;
+	margin-top: -1rem;
+}
+
+	section.offerings button{
+		margin-top: 1.5rem;
+		margin-left: -0.5rem;
+	}
+
+.impact{
+	transition: var(--ease);
+}
+
+section.offerings article:hover .impact{
+	color: var(--gray1);
+}
+
+section.offerings article:first-of-type{
+	margin-right: 1.5rem;
+
+	}
+
+
+.container.logo{
+	padding: 1.5rem;
+	padding-bottom: 4.5rem;
+	align-items: center;
+}
+
+.zmdi.divide{
+	font-size: 4rem;
+	height: 3rem; width: 3rem;
+	padding: 0;
+	margin:  1rem;
+	color: white;
+	opacity: 0.75;
+	animation: bounce ease-in 3s;
+	animation-iteration-count: 3;
+}
+
+.zmdi.divide:hover{
+	opacity: 1;
+}
+
+@keyframes bounce {
+	75%{
+		transform: translateY(0.5rem);
+		opacity: 0.9;
+
+	}
+}
+
+
+.video-wrapper{
+	background: var(--d-gray3);
+	margin-left: -3rem; margin-right: -3rem;
+	margin-bottom: -3rem;
+}
+
+.video{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	}
+
+.video-button-wrapper{
+	display: flex;
+	z-index: 8; position: relative;
+	height: 5rem;
+	align-items: flex-end; justify-content: center;
+	margin-bottom: -5rem;
+}
