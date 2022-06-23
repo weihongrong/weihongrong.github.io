@@ -357,7 +357,7 @@ section{
     font-family: var(--head);
     font-weight: 500;
     font-size: 2.5rem;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.0375em;
     margin: 1.5rem auto;
     transition: var(--ease);
     }
@@ -370,6 +370,7 @@ section{
 
     .title b, b>.title{
         font-weight: 700;
+        letter-spacing: 0;
     }
 
 .subtitle {
@@ -1236,6 +1237,10 @@ a.phone-alt .material-icons{color: white;}
 
 /*mobile layouts */
 @media screen and (max-width: 670px), screen and (max-device-width: 670px) {
+
+    section{
+      padding: 0.75rem 2rem;
+    }
 
     nav .mobile-phone-button{
       display: block;

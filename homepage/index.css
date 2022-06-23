@@ -113,4 +113,9 @@ section.offerings article:first-of-type{
       height: 2.75rem;
     }
 
+    .video-button-wrapper{
+    	margin: 0;
+    	align-items: center;
+	}
+
 }
