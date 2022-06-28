@@ -1,0 +1,164 @@
+  nav button.alt{
+    color: var(--d-gray) !important;
+  }
+
+  .title-alt{
+	font-size: 3rem;
+	font-family: var(--body);
+	letter-spacing: -0.05em;
+	font-weight: 500;
+	color: var(--gray2);
+	line-height: 1;
+	margin-bottom: 1.5rem;
+}
+
+.title-alt.sub{
+	font-size: 2rem;
+	margin: 1rem auto;
+}
+
+
+section.offerings{
+	display: flex;
+	text-align: left;
+	align-items: flex-start;
+}
+
+section.offerings:first-of-type{
+	align-items: flex-end;
+}
+
+	section.offerings button{
+		margin-top: 1.5rem;
+		margin-left: -0.5rem;
+	}
+
+.impact{
+	transition: var(--ease);
+}
+
+section.offerings article{
+	margin: 0;
+}
+
+section.offerings article:hover .impact{
+	color: var(--gray1);
+}
+
+section.offerings article:first-of-type{
+	margin-right: 1.5rem;
+
+	}
+
+
+.title-img-wrapper{
+		padding-bottom: 1.5rem;
+	}
+
+.title-img-wrapper.full-bleed{
+	margin-left: -3rem;
+	margin-right: -3rem;
+	margin-top: -3rem;
+}
+
+.title-img{
+	width: 100%;
+}
+
+.title-img-wrapper.industry{
+	padding: 0;
+}
+
+
+.container.industries{
+	padding: 1.5rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.container.industries button{
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+}
+
+.zmdi.divide{
+	font-size: 4rem;
+	height: 3rem; width: 3rem;
+	padding: 0;
+	margin:  1rem;
+	color: var(--green3);
+	opacity: 0.75;
+	animation: bounce ease-in 3s;
+	animation-iteration-count: 3;
+}
+
+.zmdi.divide:hover{
+	opacity: 1;
+}
+
+@keyframes bounce {
+	75%{
+		color: var(--green2);
+		transform: translateY(0.5rem);
+		opacity: 0.9;
+
+	}
+}
+
+
+.video-wrapper{
+	background: var(--d-gray3);
+	margin-left: -3rem; margin-right: -3rem;
+	margin-bottom: -3rem;
+}
+
+.video{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	}
+
+.video-button-wrapper{
+	display: flex;
+	z-index: 8; position: relative;
+	height: 5rem;
+	align-items: flex-end; justify-content: center;
+	margin-bottom: -5rem;
+}
+
+
+@media screen and (max-width: 850px), screen and (max-device-width: 850px) {
+	section.offerings{
+		flex-direction: column;
+	}
+
+  .container.industries button{
+    font-size: 1.1rem;
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+
+	section.offerings article:first-of-type{
+		margin-right: 0;
+		margin-bottom: 1.5rem;
+	}
+
+	.container.logo .logo-img {
+    padding: 0.75rem;
+    height: 2rem;}
+
+    .container.logo .logo-img.shrink{
+      height: 1.5rem;
+    }
+
+    .container.logo .logo-img.zoom{
+      height: 2.75rem;
+    }
+
+    .video-button-wrapper{
+    	margin: 0;
+    	align-items: center;
+	}
+
+}
