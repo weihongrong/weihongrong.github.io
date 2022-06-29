@@ -21,11 +21,11 @@
 section.offerings{
 	display: flex;
 	text-align: left;
-	align-items: flex-start;
+	align-items: stretch;
 }
 
 section.offerings:first-of-type{
-	align-items: flex-end;
+	/* align-items: flex-end; */
 }
 
 	section.offerings button{
