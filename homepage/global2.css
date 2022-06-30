@@ -742,9 +742,10 @@ footer .title.wordmark{
 
 footer .container{align-items: flex-start; flex-wrap: nowrap;}
 footer .container>div:not(.bottombar){
-    padding:0 3rem;
+    padding: 0 2rem;
     line-height: 1.75em;
-    transition: padding var(--ease);}
+    transition: padding var(--ease);
+    }
 
 .social-media{
     margin-top: 0.5rem;
@@ -771,8 +772,9 @@ footer .container>div:not(.bottombar){
         opacity: 1;
     }
 
-    footer .notitle{
+    footer .container>div.notitle:not(.bottombar){
       margin-top: 2.5rem;
+      padding-left: 0;
     }
 
 footer div.first:not(.title) {
@@ -1204,6 +1206,14 @@ a.phone-alt .material-icons{color: white;}
       text-align: center;
     }
 
+    footer .notitle{
+      display: none;
+    }
+
+    footer .split{
+      display: block;
+    }
+
     footer input{
         max-width: 25rem;
         min-width: 0;
@@ -1245,6 +1255,7 @@ a.phone-alt .material-icons{color: white;}
     .slides .screenshot.short{
         height: calc(0.60 * (100vw - 2rem));
         min-height: calc(0.60 * 20rem)}
+
     /*footer styling*/
     footer .container>div:not(.bottombar){padding:0 2rem;}
 
@@ -1321,17 +1332,15 @@ a.phone-alt .material-icons{color: white;}
     footer .container>div {
         -ms-grid-row: 2;
         -ms-grid-column: 2;
-        grid-row: 2 / 3;}
+        grid-row: 1 / 2;
+        }
     footer div.last {
         -ms-grid-row: 3;
         -ms-grid-column: 2;
-        grid-row: 3 / end;
+        grid-row: 2 / end;
         grid-column: 2 / end;
         }
-    footer div.last.notitle{
-        grid-row: 4 / end;
-        margin-top: -1.75rem;
-    }
+
     footer .container div.newsletter {
         -ms-grid-row: 1;
         -ms-grid-column: 1;
@@ -1342,10 +1351,11 @@ a.phone-alt .material-icons{color: white;}
         width: 100%;}
     footer div.first:not(.title) {
         -ms-grid-column: 1;
-        grid-row: 2 / 4;
+        grid-row: 1 / 4;
         text-align: right;
         padding-right: 2rem !important;
-        flex-flow: column-reverse;}
+        flex-flow: column-reverse;
+        }
     footer div.first .social-media{
        margin-right: -0.5rem;}
 
