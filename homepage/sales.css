@@ -1,0 +1,40 @@
+section.split{
+	text-align: left;
+}
+
+article .image-wrapper.full-bleed{
+	margin-top: -3rem;
+	margin-left: -3rem; margin-right: -3rem;
+}
+
+article .image-wrapper.full-bleed img{
+	width: 100%;
+}
+
+article.center{
+	display: flex;
+	align-items: center;
+}
+
+.header.image-wrapper{
+	padding-bottom: 1.5rem;
+}
+
+.title .zmdi-quote.flip{
+	transform: rotate(180deg);
+	color: var(--gray1);
+}
+
+.quote-wrapper .image{
+	width: 7.5rem;
+	height: 7.5rem;
+	display: block;
+	margin: auto;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-top: 2rem;
+}
+
+.quote-wrapper .image img{
+	width: 100%;
+}

@@ -1,0 +1,191 @@
+<div class="nav-panel" style="top: 5rem;position: fixed;z-index: 96;box-sizing: border-box;width: 100vw;background-color: rgba(81 81 81 97.5%); padding: 1rem;display: flex;flex-direction: column;color: var(--l-gray);">
+    <div class="mobile-buttons">
+        <button class="coss alt" style="margin-right: 0.5rem;">support</button>
+        <button class="coss alt" style="">demo</button>
+    </div>
+    <div class="nav-item">Product offerings</div>
+<div class="panel-items">
+     <div class="panel-item">
+    <div class="top-divider"></div>
+    <i class="zmdi zmdi-car"></i>
+    <span></span>Car Wars for Sales Departments
+    <i class="zmdi zmdi-chevron-right"></i>
+</div>
+          <div class="panel-item">
+        <div class="top-divider"></div>
+    <i class="zmdi zmdi-wrench"></i>
+    
+Car Wars for Service Departments<i class="zmdi zmdi-chevron-right"></i></div>
+          <div class="panel-item">
+            <div class="top-divider"></div>
+    <i class="zmdi zmdi-pin-assistant"></i>
+    CRISP Certification Phone Training<i class="zmdi zmdi-chevron-right"></i></div>
+     <div class="panel-item">
+        <div class="top-divider"></div>
+    <i class="zmdi zmdi-phone"></i>
+    Cloud Phone System<i class="zmdi zmdi-chevron-right"></i></div>
+     <div class="panel-item">
+        <div class="top-divider"></div>
+    <i class="zmdi zmdi-settings"></i>Integrations<i class="zmdi zmdi-chevron-right"></i></div></div>
+    <div class="nav-item">features</div><div class="nav-item">resources</div>
+<div class="nav-item">client stories</div>
+ </div>
+
+ <style>
+
+ .nav-panel {}
+
+.mobile-buttons button.coss {border-radius: 3rem;padding: 0.25rem 1.5rem;width: 100%;color: var(--blue3);font-weight: 700;box-shadow: none;}
+
+.mobile-buttons {display: flex;margin-bottom: 1rem;}
+
+.nav-item {font-family: var(--head);text-transform: uppercase;font-size: 1.5rem;padding: 0.75em 1rem;border-top: 1px solid var(--gray1);}
+
+.panel-item {padding: 0.75rem 0.5rem;font-size: 1.1rem;display: flex;align-items: center;}
+
+.panel-item .zmdi {font-size: 1.5rem;width: 1.5rem;text-align: center;margin-right: 0.75rem;}
+
+.panel-items {margin-bottom: 0.5rem;margin-top: -0.5rem;}
+
+
+nav{
+    background: white;
+    position: fixed; width: 100%; height: auto; display: flex;
+    align-items: flex-end;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    color: var(--d-gray3);
+    z-index: 98;
+    padding: 0.5rem 0;padding-bottom: 0.25rem;
+    transition: 0.25s ease;
+     -webkit-backface-visibility: hidden;}
+
+nav.lander .nav-buttons{
+    margin-top: 0.5rem;
+    align-self: center;
+}
+
+nav.scroll .phone.alt{
+    color: var(--d-gray) !important;
+}
+
+
+.nav-left{
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav-left>a, .nav-left .hover-menu{
+    text-transform: uppercase;
+    font-family: var(--head);
+    font-weight: 500;
+    
+    font-size: 1.25rem;
+    margin: 0 0.5rem;
+    margin-bottom: 0.25rem;padding: 0 0.5rem;
+    overflow: visible;
+    text-shadow: var(--text-shadow-light);
+    transition: font-size var(--ease);}
+
+.nav-left>a>div{
+    text-shadow: none;}
+
+nav.scroll .nav-left a, nav.scroll .nav-left>.hover-menu{
+    text-shadow: none;}
+
+.logo-holder {
+    padding: 0 !important; margin:0 !important;}
+.logo-holder img{transition: opacity var(--ease);}
+.logo-holder:hover {opacity: 0.75;}
+
+nav a:hover {text-decoration: none;}
+.nav-buttons a:hover{text-decoration: none;}
+.nav-buttons .mobile-menu-button {display: none;}
+
+.nav-left .logo-full{
+    height: 3rem;
+    padding: 0 2rem;
+}
+.nav-left .logo-mobile{
+    height: 3.1rem;
+    padding: 0 1.5rem;
+    padding-right: 1rem;
+    display: none;
+}
+.nav-left .ie{
+    display: none !important;
+}
+_:-ms-lang(x), .nav-left .ie{
+    display: block !important;
+}
+_:-ms-lang(x), .nav-left .non-ie{
+    display: none !important;
+}
+_:-ms-lang(x), nav #logogray{
+    display: none !important;
+}
+_:-ms-lang(x), nav.scroll #logowhite{
+    display: none !important;
+}
+_:-ms-lang(x), nav.scroll #logogray.ie{
+    display: block !important;
+}
+_:-ms-lang(x), .nav-left .logo-mobile{
+    display: none !important;
+}
+.contact{
+    font-weight: 500;
+    color: var(--l-gray);
+    font-size: 0.95rem;
+    position: absolute;
+    right: 0; top: 0;
+    padding-top: 0.75rem;
+    padding-right: 0.5rem;
+    transition: 0.1s ease;}
+
+.contact a, .bottombar a{
+    padding: 0 0.75rem;}
+    
+.scroll>.contact{
+    padding-top: 0.325rem;
+    color: var(--d-gray3);}
+
+nav button{
+    color: white !important;
+    font-size: 0.9rem!important;
+    letter-spacing: 1px;
+    box-shadow: none;
+border-radius: 3rem;}nav button:last-of-type{margin-right: 1rem;}
+
+nav .popup {
+    color: var(--d-gray);
+    transition: var(--ease);
+    background: rgba(255,255,255,0.95);}
+
+
+    .nav-buttons {display: flex;align-items: flex-end;}
+
+nav button.alt {padding: 0.25rem 0.75rem;font-size: 0.8rem !important;}
+
+button.phone.alt {border-radius: 0 3rem 3rem 0;padding-left: 0.5rem;margin-left: -0.25rem;}
+
+button.demo.alt {border-radius: 3rem 0 0 3rem;
+    padding-right: 0.5rem;}
+
+.nav-panel {top: 3.75rem;position: fixed;width: 100%;background: rgba(56,56,56,0.95);z-index: 96;color: var(--l-gray);padding: 1.5rem 2rem;border-bottom: 0.25rem solid var(--d-gray);}
+
+.panel-item {width: 15%;font-size: 1.25rem;padding: 1rem;flex-shrink: 0;}
+
+.top-divider {width: 2rem;height: 3px;background-color: var(--gray1);margin-bottom: 0.5rem;}
+
+.panel-item .zmdi {font-size: 2rem;width: 2rem;text-align: center;display: block;margin-bottom: 0.5rem;}
+
+.panel-items {
+  display: none;
+  align-items: flex-start;
+  }
+
+.panel-item {}
+
+i.zmdi.zmdi-chevron-right {display: inline;font-size: inherit;margin-left: 0.5rem;}
+</style>

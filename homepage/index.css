@@ -1,3 +1,35 @@
+header.empty{
+	margin: 0; padding: 0;
+	padding-top: 7.5rem;
+}
+
+
+.logo>div {
+		padding: 1rem 1.5rem;
+		font-size: 2rem;
+		font-family: var(--head);
+		font-weight: 500;
+		color: var(--gray1);
+		transition: color var(--ease);
+	}
+
+	.logo>div:hover {
+		color: var(--gray2);
+	}
+
+	.logo>.logoCard img{
+		height: 3rem;
+		margin: 0;
+		filter: none;
+	}
+
+	.logo>.logoCard.small img{
+		height: 2rem;
+	}
+
+
+
+
 .title-alt{
 	font-size: 3rem;
 	font-family: var(--body);
@@ -8,9 +40,26 @@
 	margin-bottom: 1.5rem;
 }
 
+.title-alt strong{
+	color: var(--gray1);
+}
+
 .title-alt.sub{
 	font-size: 2rem;
 	margin: 1rem auto;
+}
+
+section.split{
+	display: flex;
+	justify-content: stretch;
+}
+
+section article{
+	margin: 0;
+}
+
+section.split article:first-of-type{
+	margin-right: 1.5rem;
 }
 
 
