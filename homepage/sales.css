@@ -17,8 +17,13 @@ article.center{
 }
 
 .header.image-wrapper{
-	padding-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
 }
+
+.header.image-wrapper{
+	background: var(--l-gray2);
+}
+
 
 .title .zmdi-quote.flip{
 	transform: rotate(180deg);

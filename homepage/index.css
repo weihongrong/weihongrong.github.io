@@ -1,8 +1,15 @@
-header.empty{
-	margin: 0; padding: 0;
-	padding-top: 7.5rem;
+article.centered{
+	text-align:  center;
 }
 
+header.empty{
+	margin: 0; padding: 0;
+	padding-top: 6rem;
+}
+
+.title-alt .impact{
+	color: var(--gray1);
+}
 
 .logo>div {
 		padding: 1rem 1.5rem;
@@ -87,6 +94,9 @@ section.offerings article:first-of-type{
 
 	}
 
+article.centered .container.logo{
+	padding-bottom: 3rem;
+}
 
 .container.logo{
 	padding: 1.5rem;
