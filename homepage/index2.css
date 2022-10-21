@@ -5,7 +5,7 @@
   .title-alt{
 	font-size: 3rem;
 	font-family: var(--body);
-	letter-spacing: -0.05em;
+	letter-spacing: -0.0375em;
 	font-weight: 500;
 	color: var(--gray2);
 	line-height: 1;

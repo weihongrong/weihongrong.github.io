@@ -1,0 +1,135 @@
+header.empty{
+	margin: 0;
+    padding: 0;
+    padding-top: 5rem;
+}
+article .image-wrapper img{
+	width: 100%;
+}
+
+article .image-wrapper.full-bleed{
+	margin-top: -3rem;
+	margin-left: -3rem;
+	margin-right: -3rem;
+}
+
+article .image-wrapper.full-bleed.header{
+	max-height: 60vh;
+	overflow: hidden;
+	margin-bottom: 1.5rem;
+	/* display: flex; */
+}
+
+article .image-wrapper.full-bleed.header img{
+	margin-top: -6rem;
+	align-self: flex-end;
+}
+
+
+article.half{
+	display: flex;
+	align-content: center;
+}
+
+article.half .textwrapper{
+	width: 20rem;
+	flex-shrink: 0;
+	text-align: left;
+
+}
+
+article.half .image-wrapper{
+	width: 100%;
+	margin-left: -2rem;
+	margin-top: -2rem;
+	margin-bottom: -2rem;
+	margin-right: 1.5rem;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+article.half .image-wrapper img{
+	width: 100%;
+}
+
+
+article.half.inverse{
+	flex-direction: row-reverse;
+}
+
+
+article.half.inverse .image-wrapper{
+	margin-left: 1.5rem;
+	margin-right: -2rem;
+	text-align: right;
+}
+
+
+article.half.vert .image-wrapper{
+	text-align: center;
+	flex-shrink: 1;
+}
+
+article.half.vert .image-wrapper img{
+	max-width: 480px;
+	}
+
+article.half.vert .textwrapper{
+	width: 50%;
+	max-width: 480px;
+	}
+
+
+section.first .title-alt{
+	color: var(--gray1);
+	font-size: 3.5rem;
+}
+
+
+section.featured{
+	justify-content: center;
+}
+
+article.half.featured{
+	max-height: 350px;
+	width: calc(50% - 0.75rem);
+}
+
+article.half.featured:first-of-type{
+	margin-right: 1.5rem;
+}
+
+article.half.featured .image-wrapper{
+	margin: -3rem;
+	border-radius: 0.5rem;
+	margin-right: 1.5rem;
+	min-width: 210px;
+	width: 55%;
+	flex-shrink: 0;
+	display: flex;
+    align-items: center;
+    background: var(--gray3);
+}
+
+article.half.featured .textwrapper{
+	width: 100%;
+	flex-shrink: 1;
+}
+
+article.half.featured .textwrapper .title-alt{
+	color: var(--gray1);
+}
+
+#dental img{
+margin-top: -9rem;
+}
+
+#trucking{
+	overflow: visible;
+	margin-left: -2.5rem;
+	margin-right: -2.5rem;
+}
+
+#trucking img{
+	margin-top: 0;
+}

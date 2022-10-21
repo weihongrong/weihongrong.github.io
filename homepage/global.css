@@ -375,9 +375,10 @@ section{
 
 .subtitle {
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 1.5em;
-    margin: 0.25rem auto;}
+    margin: 0.25rem auto;
+    }
 
     .subtitle.list>div{
         padding: 0.5rem 0;
