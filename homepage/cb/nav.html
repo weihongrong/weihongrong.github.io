@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;700&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+	
+	<link type="text/css" rel="stylesheet" href="globalv2.css" />
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<nav>
+		<div class="nav-mobile-phone-button nav-mobile">
+			<a class="dynamic-phone-number" href="tel:866-853-1972"><i class="zmdi zmdi-phone"></i></a>
+		</div>
+
+		<div class="nav-left">
+			<a class="nav-logo-holder nav-mobile" href="/home">
+				<img class="non-ie" src="https://carwars-assets.s3.amazonaws.com/logos-2021/car-wars/svg/Car+Wars+Logo_Vertical_Multi-White_Digital.svg" alt="Car Wars">
+				<img class="ie" src="https://carwars-assets.s3.amazonaws.com/logos-2021/car-wars/png/Car+Wars+Logo_Vertical_Multi-White_Digital.png" alt="Car Wars">
+			</a>
+
+
+			<a class="nav-logo-holder" href="/home">
+				<img class="non-ie" src="https://carwars-assets.s3.amazonaws.com/logos-2021/car-wars/svg/Car+Wars+Logo_Horizontal_Multi-White_Digital.svg" alt="Car Wars">
+				<img class="ie" src="https://carwars-assets.s3.amazonaws.com/logos-2021/car-wars/png/Car+Wars+Logo_Horizontal_Multi-White_Digital.png" alt="Car Wars">
+			</a>
+
+			<a class="nav-item expand" data-name='offerings' href="#">Product Offerings</a>
+			<a class="nav-item expand" data-name='resources' href="#">Resources</a>
+			<a class="nav-item" href="/home/solutions">Features</a>
+			<a class="nav-item" href="/home/stories">Client Stories</a>
+		</div>
+
+		<div class="nav-buttons">
+			<button class="alt"><a href="/platform_a/help.cfm">support</a></button>
+			<button class="demo alt"><a href="/home/a/demo/">demo</a></button>
+			<button class="phone alt">
+				<a class="dynamic-phone-number" href="tel:866-853-1972">866-853-1972</a>
+			</button>
+
+			<button id="login-button">LOGIN</button>
+
+			<div class='nav-mobile-menu-button nav-mobile'>
+				<i class="zmdi zmdi-menu"></i>
+				<i class="zmdi zmdi-chevron-up"></i>
+			</div>
+		</div>
+
+		<div class="popup" id="login">
+			<div class="head">
+				<div class="title firstof">Log in to Car Wars</div>
+				<span class="close"> </span>
+			</div>
+
+			<div>
+				<div class="slider">
+					<button class="active" type="button" id="salesToggle">Sales</button>
+					<button type="button" id="serviceToggle">Service</button>
+				</div>
+
+                <form name="domain-login-control" action="//carwars.com/platform_a/login2.cfm" method="post">
+					<label name="username">USERNAME</label>
+					<input name="username" type="text" value="" message="Please enter your username" autocomplete="on" required="">
+					<label name="password">PASSWORD</label>
+	                <input type="hidden" id="domain" name="domain" value="carwars.com">
+					<input type="password" name="password" autocomplete="on" required="">
+					<a class='link message' href="/cw/login_password.cfm"> Forgot your password?</a>
+
+					<div class="message error" hidden>Invalid login. Please try again.</div>
+
+					<button type="submit"> Login </button>
+				</form>
+			</div>
+		</div>
+
+		<div class="nav-panel">
+			<div class="nav-mobile-buttons nav-mobile">
+				<button class="alt"><a href='/platform_a/help.cfm'>support</a></button>
+				<button class="demo alt"><a href='/home/a/demo/'>demo</a></button>
+			</div>
+
+			<div class="nav-panel-section first">
+				<div class="nav-mobile-panel-section-title nav-mobile">Product Offerings</div>
+				<div class="nav-panel-items" id='offerings'>
+			    	<a class="nav-panel-item" href='/home/sales'>
+					    <div class="top-divider"></div>
+					    <i class="zmdi zmdi-car"></i>
+					    Car Wars for Sales Departments<i class="zmdi zmdi-chevron-right pointer"></i>
+					</a>
+
+					<a class="nav-panel-item" href='/home/service'>
+					    <div class="top-divider"></div>
+					    <i class="zmdi zmdi-wrench"></i>
+					    Car Wars for Service Departments<i class="zmdi zmdi-chevron-right pointer"></i>
+					</a>
+
+					<a class="nav-panel-item" href='/home/solutions/crisp-certification'>
+						<div class="top-divider"></div>
+					    <i class="zmdi zmdi-pin-assistant"></i>
+					    CRISP Certification Phone Training<i class="zmdi zmdi-chevron-right pointer"></i>
+					</a>
+
+					<a class="nav-panel-item" href='/home/solutions/cloud-phone-system'>
+						<div class="top-divider"></div>
+					    <i class="zmdi zmdi-phone"></i>
+					    Cloud Phone System<i class="zmdi zmdi-chevron-right pointer"></i>
+					</a>
+
+					<a class="nav-panel-item" href='/home/solutions/integrations'>
+						<div class="top-divider"></div>
+					    <i class="zmdi zmdi-ungroup"></i>
+					    Integrations<i class="zmdi zmdi-chevron-right pointer"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="nav-panel-section">
+				<div class="nav-mobile-panel-section-title nav-mobile">Resources</div>
+				<div class="nav-panel-items" id='resources'> 
+			    	<a class="nav-panel-item" href='#'>
+					    <div class="top-divider"></div>
+					    Featured Resource 1 <i class="zmdi zmdi-chevron-right pointer"></i>
+					</a>
+
+					<a class="nav-panel-item" href='#'>
+					    <div class="top-divider"></div>
+					    Featured Resource 2 <i class="zmdi zmdi-chevron-right pointer"></i>
+					</a>
+
+					<a class="nav-panel-item" href='#'>
+					    <div class="top-divider"></div>
+					    Featured Resource 3 <i class="zmdi zmdi-chevron-right pointer"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="nav-panel-section">
+				<div class="nav-mobile-panel-section nav-mobile">
+					<a class="nav-mobile-panel-section-title" href="/home/solutions">Features</a>
+				</div>
+			</div>
+
+			<div class="nav-panel-section">
+				<div class="nav-mobile-panel-section nav-mobile">
+					<a class="nav-mobile-panel-section-title" href="/home/stories">Client Stories</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div id='btt'>
+		<i class='zmdi zmdi-chevron-up'></i>
+	</div>
+
+	<main>
+		<header class="takeover">
+			<a class="maintitle" href="https://www.carwars.com/home/a/service-promo-22/?tacticid=7942" target="_blank">
+				<div class="container">
+					<div class="textwrapper">
+						<div class="title firstof">
+							Want to start tackling the phone in Service?
+						</div>
+						<div class="title sub lastof">
+							Demo Car Wars Service for a chance to win $1,000 of Car Wars Cash to watch your favorite football team play live!
+						</div>
+
+						<button class="big green overwhite">Learn More</button>
+					</div>
+				</div>
+			</a>
+		</header>
+
+		<style>
+			header {
+				padding-top: 6rem;
+				padding-bottom: 3rem;
+			}
+
+			.textwrapper .title.firstof {
+				margin-top: 4rem !important;
+			}
+
+			.takeover{
+				background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://carwars-assets.s3.amazonaws.com/websites/landing-pages/football-gif.gif');
+				background-color: var(--d-gray1);
+				background-size: cover;
+				background-position-y: 1.8rem;
+				background-repeat: no-repeat;
+				background-attachment: scroll;
+			}
+
+			.takeover .maintitle{
+				min-width: 500px;
+				z-index: 5;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+			}
+
+			.takeover .textwrapper {
+				max-width: 580px;
+				margin: auto;
+				color: white;
+			}
+
+			.takeover .title{
+				font-family: var(--mlight);
+				font-size: 3rem;
+				text-transform: uppercase;
+				line-height: 1.1;
+			}
+
+			.takeover .title.sub {
+				font-family: var(--head);
+				font-size: 1.5rem;
+				font-weight: 600;
+				text-transform: none;
+				color: white;
+				line-height: 1.2;
+			}
+
+			.takeover button {
+				margin: 2rem auto auto 0;
+			}
+
+			@media screen and (max-width: 850px), screen and (max-device-width: 850px) {
+
+				.takeover {
+					background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://carwars-assets.s3.amazonaws.com/websites/landing-pages/football-gif.gif');
+					background-position-x: center;
+					background-position-y: center;
+					padding-right: 1rem;
+		    		padding-left: 1rem;
+				}
+
+				.takeover .maintitle{
+					min-width: 0;
+				}
+
+				.takeover .textwrapper {
+					text-align: center;
+				}
+
+				.takeover button {
+					margin: 1.5rem auto 0.5rem auto;
+				}
+
+				.takeover .title {
+					font-size: 2.5rem;
+					margin-bottom: 0;
+				}
+			}
+		</style>
+
+		<footer>
+			<div class='container'>
+				<div class='footer-column first'>
+					<div class="footer-award">
+						<a target="_blank" href="/home/news-resources/news/a/car-wars-receives-highest-drivingsales-dealer-satisfaction-award.cfm">
+							<img src="https://carwars-assets.s3.amazonaws.com/websites/landing-pages/DrivingSales+Award+2021.png">
+						</a>
+					</div>
+
+					<div>
+						<div class='place'>
+							<div class='title wordmark'>Car Wars</div>
+							<span>
+							8080 Park Lane<br/>
+							Suite 550<br/>
+							Dallas, TX 75231
+							</span>
+						</div>
+
+						<div class="social-media">
+							<a target="_blank" href="https://www.linkedin.com/company/car-wars/">
+								<img src="https://s3.amazonaws.com/carwars-assets/cw/linkedin.png"></a>
+							<a target="_blank" href="https://www.facebook.com/OwnThePhoneWithCarWars/">
+								<img src="https://s3.amazonaws.com/carwars-assets/cw/fb.png">
+							</a>
+							<a target="_blank" href="https://www.instagram.com/__carwars/">
+								<img src="https://s3.amazonaws.com/carwars-assets/cw/ig.png">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-column">
+					<div class='title'>About Car Wars </div>
+					<a><div hidden> Our Story </div></a>
+					<div hidden> What is CRISP? </div>
+					<a href='/home/news-resources/crisp-quarterly/'><div> The CRISP Quarterly </div></a>
+					<a href='/home/news-resources/events'><div> Events </div></a>
+					<a href='/home/news-resources/news'><div> News </div></a>
+					<a href='/cw/learn/' target='_blank'><div> Learn </div></a>
+					<a href='/cw/contact-us/'><div>Contact</div></a>
+					<a href="https://recruiting.paylocity.com/recruiting/jobs/All/4752658c-1597-412e-afe3-b07cae6c0351/CENTURY-INTERACTIVE-COMPANY-LC" target="_blank"><div>Careers</div></a>
+				</div>
+
+				<div class='footer-column last'>
+					<div class='title'> Features </div>
+					<a href='/cari/'><div> Meet Cari </div></a>
+					<a href='/home/solutions/field-ops/'>
+						<div> Field Operations </div>
+					</a>
+					<div hidden> Website Call Tracking </div>
+					<a href='/crisp-certification/'><div> CRISP Certification </div></a>
+					<a href='/home/solutions/integrations'><div> Integrations </div></a>
+				</div>
+
+				<div class='footer-column newsletter'>
+					<div class='title'> Subscribe to Our Newsletter </div>
+						<form>
+							<input id='mcmail' placeholder="Enter Your Email Address" />
+							<button type='button' id='mcsub'>Subscribe</button>
+						</form>
+				</div>
+				</cfif>
+
+				<div class='bottombar'>
+					<div class="title">
+						<span class='wordmark'>Car Wars</span> is a <span class='wordmark'>Call Box</span> Innovation.
+					</div>
+
+					<div class="bottombar-links">
+						<a href='//www.callbox.com' target='_blank'>&#xa9; <cfoutput>#year(now())#</cfoutput> Call Box</a>
+						<span class='vdivider'>|</span>
+						<a href='//www.callbox.com/privacy-policy/' target='_blank'>Privacy Policy</a>
+						<span class='vdivider'>|</span>
+						<a href='//www.callbox.com/terms-of-service/' target="_blank">Terms of Service</a>
+						<span class='vdivider'>|</span>
+						<a href='/pay' target="_blank">Pay Invoice</a>
+					</div>
+
+					<p id="privacyNotice">
+						For personal data requests, please contact us at <a href='tel:8339750168'>833-975-0168</a> or <a href='mailto:privacy@callbox.com' target='_blank'>privacy@callbox.com</a>.
+					</p>
+				</div>
+			</div>
+		</footer>
+	</main>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	var panelShown;
+	var activeCat;
+
+	$(document).ready(function(){
+		var w = $(window).width();
+		var vHeight = $(window).height();
+		var navHeight = $('nav').height();
+
+	    if(window.scrollY > navHeight){
+	        $('#btt').addClass('show');
+	    }
+
+	    $(window).scroll(function(){
+	        var check = window.scrollY - navHeight;
+
+	        if(check > 1){
+	            $('#btt').addClass('show');
+	        }else{
+	            $('#btt').removeClass('show');
+	        }
+	    });
+
+		$('#btt').click(function(){
+			window.scroll({top: 0,behavior: 'smooth' });
+		});
+
+		$('.nav-mobile-menu-button').click(function(){
+			togglePanel();
+		})
+
+	    $('.nav-item.expand').click(function(e){
+	        e.preventDefault();
+	        cat = $(this).data('name');
+
+	        //toggle content
+	        $('.nav-panel-items').removeClass('show');
+	        $('#'+cat).addClass('show')
+
+	        if((activeCat == cat && panelShown) || !panelShown){
+	        	togglePanel();
+	        }
+	       	activeCat = cat;
+	    });
+
+		$(window).bind('resizeEnd',function(){
+			vHeight = $(window).height();
+		});
+
+
+	    $('#mcsub').click(function(){ 
+	        $('#mcmail').removeClass('error');
+	        var mcmail = $('#mcmail').val();
+	        if(isValidEmailAddress(mcmail)){
+
+	            if(tacticid == 'No Tactic ID Associated' || tacticid == null || tacticid == ''){
+	                var tacticid = 0;
+	            }
+
+	            var mc_data = {
+	                form_name: 'CW Newsletter Signup',
+	                user_name: '--',
+	                user_email: mcmail,
+	                tacticid: tacticid
+	            };
+
+
+	            $.ajax({
+	                url: '/home/components/mail.cfm',
+	                method: 'post',
+	                data: mc_data,
+	                success: function (result) {
+	                    console.log(result);
+	                   $('#mcmail').val('').attr('placeholder','Thank You!');
+	                }
+	            });
+	            var method = {method : 'subSchedInsert'};
+	            var sch_data = $.extend({},method ,mc_data);
+
+
+	            $.ajax({
+	                url: '/scheduler_global/phone-code-training/appointment_request_module/appointment_submit.cfc',
+	                type : "POST",
+	                data: sch_data,
+	                success: function (result) {
+	                }
+	            });
+	        }else{
+	            $('#mcmail').addClass('error');
+	        }
+	    });
+	});
+
+	function isValidEmailAddress(emailInput) {
+	    var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+	    return pattern.test(emailInput);
+	};
+
+	function sanitize(data){
+	 	return data.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+	};
+
+
+	function togglePanel() {
+		 $('nav').toggleClass('opaque');
+		 $('.nav-panel').slideToggle(30);
+		 panelShown = !panelShown;
+	}
+
+	activeCampaignTagBuilder = function(submission){
+	    var constructedTag = ''
+	    var devMode = false
+	    if (activeCampaignName) {
+	      constructedTag += activeCampaignName
+	    }
+
+	    if (submission.is_client === 'yes') {
+	        constructedTag += ', CW Client'
+	    }
+	    else{
+	        constructedTag += ', CW Prospect'
+	    }
+
+	    if (devMode) {
+	      //temp add a tag so marketing can find and delete these later
+	      constructedTag += ', Developer Test'
+	    }
+
+	    constructedTag += ', Automotive'
+
+	    return constructedTag
+	} 
+
+	activeCampaign = function(submission){
+	    var apiUrl = "https://callboxcompany.api-us1.com";
+	    var apiString = apiUrl + "/admin/api.php";
+	    var builtTags = activeCampaignTagBuilder(submission)
+	    var contact = {
+	        "api_action": "contact_sync",
+	        "api_key": window.atob(ackey),
+	        "email": submission.email,
+	        "first_name": submission.name, 
+	        "customer_acct_name": submission.dealership,
+	        "field[%INDUSTRY%,0]": 'Automotive',
+	        "tags": builtTags
+	    };
+	    $.post(apiString, contact, function(response){
+	      console.log("Response: ", response);
+	    });
+	}
+
+	function gsheet(){
+	    var valid = 42;
+
+	    var request_name = $('.request input[name=request_name]').val();
+	    var source = $('.request input[name=source]').val();
+
+	    var uname = $('.request input[name=name]').val();
+	    var ucompany = $('.request input[name=company]').val();
+	    var uemail = $('.request input[name=email]').val();
+	    var uaddress = $('.request input[name=addr]').val();
+	    var ucity = $('.request input[name=city]').val();
+	    var ustate = $('.request input[name=state]').val();
+	    var uzip = $('.request input[name=zip]').val();
+	    var copies = $('.request input[name=copies]').val();
+	        
+	    $('.request input').removeClass('error');
+	    if(uname.length < 2){
+	        $('.request input[name=name]').addClass('error').attr('placeholder','Please enter your name.');
+	        valid -= 1
+	    }if(ucompany.length < 2 && ucompany != '--'){
+	        $('.request input[name=company]').addClass('error').attr('placeholder','Please enter your dealership name.');
+	        valid -= 1
+	    }if(!isValidEmailAddress(uemail)){
+	        $('.request input[name=email]').addClass('error').attr('placeholder','Please enter your work email.');
+	        valid -= 1;
+	    }if(uaddress.length < 2){
+	        $('.request input[name=addr]').addClass('error').attr('placeholder','Please enter a valid address.');
+	        valid -= 1;
+	    }if(uzip.length < 5){
+	        $('.request input[name=zip]').addClass('error');
+	        valid -= 1;
+	    }if(ucity.length < 2){
+	        $('.request input[name=city]').addClass('error').attr('placeholder','Please enter a valid city.');
+	        valid -= 1;
+	    }if(ustate.length < 2){
+	        $('.request input[name=state]').addClass('error');
+	        valid -= 1;
+	    }if(copies == null || copies == '' || copies > 100){
+	        $('.request input[name=copies]').addClass('error');
+	        valid -= 1;
+	    };
+
+	    if(valid == 42){ 
+	        $('#request-button').fadeOut(75, function(){
+	            $('#request .form-load').fadeIn(75);
+	        });
+
+	        var gsheets_data = {
+	            sheet_name: 'Requests',
+	            request_name : request_name,
+	            name : sanitize(uname),
+	            dealership : sanitize(ucompany),
+	            email : sanitize(uemail),
+	            source : source,
+	            address : uaddress,
+	            zip : uzip,
+	            city : ucity,
+	            state : ustate,
+	            num_copies : copies
+	        };
+
+	        $.ajax({
+	            url: "https://script.google.com/macros/s/AKfycbwnW5_wKR28Kj6pimjH4WheeR-uHP0C7CyasDO7pdLzBZeHXuJFwbO2x0KvomelMwV9/exec",
+	            method: "GET",
+	            data: gsheets_data
+	        });
+
+	        if (activeCampaignName) {
+	            activeCampaign(gsheets_data)
+	        }
+
+	        $.ajax({
+	            url: '/home/components/mail.cfm',
+	            method: 'POST',
+	            data: gsheets_data,
+	            headers: {
+	            'Access-Control-Allow-Origin': '*',
+	            'Content-Type':'application/x-www-form-urlencoded'
+	            },
+	            success: function(){
+	                $('#requestsubmit').trigger("click");
+	            }
+	        });
+	    }else{
+	         return false;
+	    };
+	};
+</script>
+
